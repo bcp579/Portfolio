@@ -255,7 +255,7 @@ export default function Portfolio() {
               </defs>
 
               <image 
-                href="/image.png" 
+                href="/Portfolio/image.png" 
                 width="100%" 
                 height="100%" 
                 clipPath="url(#aviator-mask)" 
@@ -293,7 +293,7 @@ export default function Portfolio() {
           <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
             <div className="shadow-2xl ... rounded-xl mx-auto relative w-64 h-64">
               <Image 
-                src="/Avatar.png" 
+                src="/Portfolio/Avatar.png" 
                 alt="Bhavya Patel" 
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
