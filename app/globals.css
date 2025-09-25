@@ -1,5 +1,63 @@
 @import "tailwindcss";
 
+/* Define the light theme variables as the default */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --shadow-color: #000000;
+  --project_background: #f9f9f9;
+}
+
+/* Define the dark theme variables within a class */
+.dark {
+  --background: #161616;
+  --foreground: #ededed;
+  --shadow-color: #ffffff;
+  --project_background: #3c3b3b;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0.0deg) }
+  10% { transform: rotate(14deg) }
+  20% { transform: rotate(-8deg) }
+  30% { transform: rotate(14deg) }
+  40% { transform: rotate(-4deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate(0.0deg) }
+  100% { transform: rotate(0.0deg) }
+}
+.wave {
+  animation: wave 2.5s infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+/* Add an animation for the blinking cursor */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: currentColor; }
+}
+
+@keyframes blink-caret-custom {
+  from, to { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.auto-input .animate-blink-caret-custom {
+  animation: blink-caret-custom 1s step-end infinite;
+}
+
+/* This will be managed by Tailwind's dark: classes */
+/* So you no longer need to set a fixed background/color here */
+/* The styles will be applied to the <body> tag in your layout */
+
+
+
+/* @import "tailwindcss";
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -23,4 +81,4 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
