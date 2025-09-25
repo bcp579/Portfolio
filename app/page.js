@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import ThemeToggleButton from './components/ThemeToggleButton';
 import Typewriter from './components/Typewriter'; 
 import SkillAccordion from './components/SkillAccordion';
@@ -211,13 +212,13 @@ export default function Portfolio() {
         <section id="hero" className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-13 text-left ">
           <div className="max-w-3xl">
             <p className="text-[var(--foreground)] text-3xl font-bold mb-1">
-              Hi! <span className="wave">👋</span>, I'm {portfolioData.name.split(' ')[0]}
+              Hi! <span className="wave">👋</span>, I&apos;m {portfolioData.name.split(' ')[0]}
             </p>
             <h3 className="text-[var(--foreground)] opacity-70 text-2xl mb-4 font-bold">
-              and I'm <Typewriter/>
+              and I&apos;m <Typewriter/>
             </h3>
             <p className="text-[var(--foreground)] opacity-70 text-lg max-w-xl mb-8">
-              I build things for the web. I'm a software engineer specializing in building (and occasionally designing) exceptional digital experiences.
+              I build things for the web. I&apos;m a software engineer specializing in building (and occasionally designing) exceptional digital experiences.
             </p>
             <div className="flex space-x-4">
               <a href="#projects" className="bg-[hsl(225,69%,61%)] hover:bg-[hsl(225,69%,79%)] text-white font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-105 shadow-lg">
@@ -290,11 +291,13 @@ export default function Portfolio() {
              My Introduction
           </h2>
           <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
-            <div className="shadow-2xl shadow-[var(--shadow-color)]/50 w-64 h-64 border-2 border-[hsl(225,69%,61%)]/50 rounded-xl mx-auto">
-              <img 
+            <div className="shadow-2xl ... rounded-xl mx-auto relative w-64 h-64">
+              <Image 
                 src="/Avatar.png" 
                 alt="Bhavya Patel" 
-                className="w-full h-full rounded-xl object-cover"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="rounded-xl object-cover"
               />
             </div>
             <div className="md:w-2/3 text-lg text-[var(--foreground)] opacity-70 space-y-4">
