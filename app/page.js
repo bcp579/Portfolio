@@ -75,7 +75,14 @@ export default function Portfolio() {
   const portfolioData = {
     name: "Bhavya Patel",
     title: "Computer Science Student & Software Developer",
-    about: "Hi! I'm Bhavya, a Computer Science student at Toronto Metropolitan University with a passion for mobile development and data intelligence. As a CS major with a problem-solving superpower, I tackle technical challenges from a fresh, user-centric perspective. In my free time, I like discovering new tech, building cross-platform apps, and figuring out my life.",
+    about:( 
+      <>
+        Hi! I&apos;m Bhavya, a Computer Science student at TMU with a passion for mobile development and data intelligence. As a CS major with a problem-solving superpower, I tackle technical challenges from a fresh, user-centric perspective.
+        <br />
+        <br />
+        In my free time, I like discovering new tech, building cross-platform apps, and figuring out my life.
+      </>
+      ),
     experience: [
       {
         company: "Toronto Metropolitan University",
@@ -249,8 +256,8 @@ export default function Portfolio() {
              High-level experience in Full-Stack Mobile Development and Data Science, producing quality, scalable work.
             </p>
             <div className="flex space-x-4">
-              <a href="#projects" className="bg-[hsl(225,69%,61%)] hover:bg-[hsl(225,69%,79%)] text-white font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-105 shadow-lg">
-                View My Work
+              <a href="#contact" className="bg-[hsl(225,69%,61%)] hover:bg-[hsl(225,69%,79%)] text-white font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-105 shadow-lg">
+                Contact Me ⌯⌲
               </a>
               <a href="/Portfolio/Bhavya_Resume.pdf" target="_blank" rel="noopener noreferrer" className="border-2 border-[hsl(225,69%,61%)] hover:bg-[hsl(225,69%,61%)] text-[hsl(225,69%,61%)] hover:text-white font-bold py-3 px-6 rounded-lg transition-all transform hover:scale-105">
                 Download Resume
