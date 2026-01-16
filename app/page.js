@@ -75,7 +75,7 @@ export default function Portfolio() {
   const portfolioData = {
     name: "Bhavya Patel",
     title: "Computer Science Student & Software Developer",
-    about: "I am a Bachelor of Science in Computer Science student at Toronto Metropolitan University. I specialize in full-stack mobile development and data science, with a passion for building scalable applications using React Native and Python. My background includes developing cloud-based solutions, optimizing machine learning models, and ensuring AODA compliance.",
+    about: "Hi! I'm Bhavya, a Computer Science student at Toronto Metropolitan University with a passion for mobile development and data intelligence. As a CS major with a problem-solving superpower, I tackle technical challenges from a fresh, user-centric perspective. In my free time, I like discovering new tech, building cross-platform apps, and figuring out my life.",
     experience: [
       {
         company: "Toronto Metropolitan University",
@@ -246,7 +246,7 @@ export default function Portfolio() {
               and I&apos;m <Typewriter/>
             </h3>
             <p className="text-[var(--foreground)] opacity-70 text-lg max-w-xl mb-8">
-             I am a Computer Science student at Toronto Metropolitan University (formerly Ryerson University) specializing in full-stack mobile development and data science. I build scalable applications using React Native and Python, focusing on creating efficient, user-centric digital solutions.
+             High-level experience in Full-Stack Mobile Development and Data Science, producing quality, scalable work.
             </p>
             <div className="flex space-x-4">
               <a href="#projects" className="bg-[hsl(225,69%,61%)] hover:bg-[hsl(225,69%,79%)] text-white font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-105 shadow-lg">
