@@ -252,7 +252,7 @@ export default function Portfolio() {
               <a href="#projects" className="bg-[hsl(225,69%,61%)] hover:bg-[hsl(225,69%,79%)] text-white font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-105 shadow-lg">
                 View My Work
               </a>
-              <a href="/Bhavya_Resume.pdf" target="_blank" rel="noopener noreferrer" className="border-2 border-[hsl(225,69%,61%)] hover:bg-[hsl(225,69%,61%)] text-[hsl(225,69%,61%)] hover:text-white font-bold py-3 px-6 rounded-lg transition-all transform hover:scale-105">
+              <a href="/Portfolio/Bhavya_Resume.pdf" target="_blank" rel="noopener noreferrer" className="border-2 border-[hsl(225,69%,61%)] hover:bg-[hsl(225,69%,61%)] text-[hsl(225,69%,61%)] hover:text-white font-bold py-3 px-6 rounded-lg transition-all transform hover:scale-105">
                 Download Resume
               </a>
             </div>
@@ -283,7 +283,7 @@ export default function Portfolio() {
               </defs>
 
               <image 
-                href="/image.png" 
+                href="/Portfolio/image.png" 
                 width="100%" 
                 height="100%" 
                 clipPath="url(#aviator-mask)" 
