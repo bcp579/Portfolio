@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Bhavya_Portfolio",
   description: "A personal portfolio website.",
+  icons: {
+    icon: '/Portfolio/logo.png', 
+  },
 };
 
 export default function RootLayout({ children }) {
