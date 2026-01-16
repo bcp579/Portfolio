@@ -52,6 +52,13 @@ const XIcon = (props) => (
   </svg>
 );
 
+const BriefcaseIcon = (props) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <rect width="20" height="14" x="2" y="7" rx="2" ry="2" />
+    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+  </svg>
+);
+
 
 // --- Main Portfolio Component ---
 export default function Portfolio() {
@@ -67,70 +74,91 @@ export default function Portfolio() {
   // --- Data for your portfolio ---
   const portfolioData = {
     name: "Bhavya Patel",
-    title: "Computer Science Student & Aspiring Software Engineer",
-    about: "I am a passionate computer science student with a strong foundation in software development and problem-solving. I enjoy building applications that are scalable, efficient, and user-friendly. Currently exploring opportunities in cloud computing and machine learning.",
+    title: "Computer Science Student & Software Developer",
+    about: "I am a Bachelor of Science in Computer Science student at Toronto Metropolitan University. I specialize in full-stack mobile development and data science, with a passion for building scalable applications using React Native and Python. My background includes developing cloud-based solutions, optimizing machine learning models, and ensuring AODA compliance.",
+    experience: [
+      {
+        company: "Toronto Metropolitan University",
+        role: "Mobile App and Academic Initiatives Developer",
+        period: "May 2025 - Present",
+        description: "Developed a cross-platform mobile application for 1,000+ users using React Native and Firebase. Architected scalable backend solutions and collaborated in an agile environment to ensure high-quality user experiences.",
+      },
+      {
+        company: "Toronto Metropolitan University",
+        role: "Library Digitization Projects Assistant",
+        period: "Sep 2024 - April 2025",
+        description: "Streamlined digital archival processes by increasing processing speed by 20%. Managed high-volume data projects while ensuring 100% accuracy and compliance with AODA accessibility standards.",
+      },
+      {
+        company: "Asurion",
+        role: "IT Technician",
+        period: "Oct 2022 - May 2024",
+        description: "Resolved over 500 technical issues for clients, reducing ticket resolution time by 15%. Orchestrated enterprise software deployments and security patches across client devices.",
+      },
+    ],
     skills: [
       {
         category: "Languages & Frameworks",
-        icon: "code", // A simple string to represent the icon
-        level: "More than 4 years of experience",
+        icon: "code", 
+        level: "Academic & Professional Experience",
         items: [
-          { name: "JavaScript", percentage: "90%" },
-          { name: "React / Next.js", percentage: "85%" },
-          { name: "Node.js", percentage: "80%" },
-          { name: "Python", percentage: "75%" },
+          { name: "Python (Pandas, NumPy)", percentage: "90%" },
+          { name: "React Native / JS", percentage: "85%" },
+          { name: "C / C++", percentage: "75%" },
+          { name: "Java", percentage: "70%" },
         ],
       },
       {
-        category: "Databases & Tools",
+        category: "AI & Data Science",
         icon: "database",
-        level: "More than 2 years of experience",
+        level: "Project-based Experience",
         items: [
-          { name: "SQL", percentage: "80%" },
-          { name: "MongoDB", percentage: "75%" },
-          { name: "Git / GitHub", percentage: "90%" },
-          { name: "Docker", percentage: "65%" },
+          { name: "TensorFlow / Keras", percentage: "80%" },
+          { name: "Scikit-learn", percentage: "85%" },
+          { name: "Matplotlib / Power BI", percentage: "75%" },
+          { name: "SQL / MS SQL Server", percentage: "80%" },
         ],
       },
       {
-        category: "Cloud & DevOps",
+        category: "Cloud & Tools",
         icon: "server",
-        level: "More than 1 year of experience",
+        level: "Industry Standard Tools",
         items: [
-          { name: "AWS", percentage: "60%" },
-          { name: "CI/CD", percentage: "55%" },
-          { name: "Jenkins", percentage: "40%" },
+          { name: "Firebase", percentage: "85%" },
+          { name: "Microsoft Azure", percentage: "60%" },
+          { name: "Git / GitHub", percentage: "90%" },
+          { name: "Jira / Agile", percentage: "80%" },
         ],
       },
     ],
     projects: [
       {
-        title: "Project One: E-commerce Platform",
-        description: "A full-stack e-commerce website built with the MERN stack, featuring product listings, a shopping cart, user authentication, and a Stripe integration for payments.",
-        imageUrl: "https://placehold.co/600x400/1e293b/ffffff?text=Project+One",
-        liveUrl: "#",
-        githubUrl: "#",
+        title: "TMU Student Mobile App",
+        description: "Developed and deployed a cross-platform app for 1,000+ users using React Native. Architected a robust backend with Firebase for high availability and implemented user-focused design.",
+        imageUrl: "https://placehold.co/600x400/1e293b/ffffff?text=TMU+Mobile+App",
+        liveUrl: "https://apps.apple.com/ca/app/fyeng-mobile/id6749859039", // Add link if available on App Store
+        githubUrl: "https://github.com/bcp579",
       },
       {
-        title: "Project Two: Machine Learning Model",
-        description: "Developed a Python-based machine learning model to predict housing prices using Scikit-learn, Pandas, and Matplotlib for data visualization.",
-        imageUrl: "https://placehold.co/600x400/1e293b/ffffff?text=Project+Two",
+        title: "AI-Powered Chatbot & API",
+        description: "Built a full-stack solution integrating OpenAI API with a Node.js backend and Azure SQL. Improved response accuracy by 25% and managed scalable user data.",
+        imageUrl: "https://placehold.co/600x400/1e293b/ffffff?text=AI+Chatbot",
         liveUrl: "#",
-        githubUrl: "#",
+        githubUrl: "https://github.com/bcp579",
       },
       {
-        title: "Project Three: Mobile App",
-        description: "A cross-platform mobile application using React Native for tracking personal fitness goals. Integrated with Firebase for real-time data synchronization.",
-        imageUrl: "https://placehold.co/600x400/1e293b/ffffff?text=Project+Three",
+        title: "Predictive Modeling Case Study",
+        description: "Created data-driven ML models (Linear Regression, CNN) using Python and TensorFlow. Applied hyperparameter tuning and PCA to reduce complexity by 30%.",
+        imageUrl: "https://placehold.co/600x400/1e293b/ffffff?text=Predictive+Modeling",
         liveUrl: "#",
-        githubUrl: "#",
+        githubUrl: "https://github.com/bcp579",
       },
        {
-        title: "Project Four: DevOps Pipeline",
-        description: "Designed and implemented a CI/CD pipeline using Jenkins and Docker to automate the testing and deployment of a web application on AWS.",
-        imageUrl: "https://placehold.co/600x400/1e293b/ffffff?text=Project+Four",
+        title: "Library Digitization Automation",
+        description: "Streamlined digital archival processes at TMU using specialized software and metadata tools, increasing processing speed for academic records by 20%.",
+        imageUrl: "https://placehold.co/600x400/1e293b/ffffff?text=Digitization+Project",
         liveUrl: "#",
-        githubUrl: "#",
+        githubUrl: "https://github.com/bcp579",
       },
     ],
     contact: {
@@ -218,13 +246,13 @@ export default function Portfolio() {
               and I&apos;m <Typewriter/>
             </h3>
             <p className="text-[var(--foreground)] opacity-70 text-lg max-w-xl mb-8">
-              I build things for the web. I&apos;m a software engineer specializing in building (and occasionally designing) exceptional digital experiences.
+             I am a Computer Science student at Toronto Metropolitan University (formerly Ryerson University) specializing in full-stack mobile development and data science. I build scalable applications using React Native and Python, focusing on creating efficient, user-centric digital solutions.
             </p>
             <div className="flex space-x-4">
               <a href="#projects" className="bg-[hsl(225,69%,61%)] hover:bg-[hsl(225,69%,79%)] text-white font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-105 shadow-lg">
                 View My Work
               </a>
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="border-2 border-[hsl(225,69%,61%)] hover:bg-[hsl(225,69%,61%)] text-[hsl(225,69%,61%)] hover:text-white font-bold py-3 px-6 rounded-lg transition-all transform hover:scale-105">
+              <a href="/Bhavya_Resume.pdf" target="_blank" rel="noopener noreferrer" className="border-2 border-[hsl(225,69%,61%)] hover:bg-[hsl(225,69%,61%)] text-[hsl(225,69%,61%)] hover:text-white font-bold py-3 px-6 rounded-lg transition-all transform hover:scale-105">
                 Download Resume
               </a>
             </div>
@@ -255,7 +283,7 @@ export default function Portfolio() {
               </defs>
 
               <image 
-                href="/Portfolio/image.png" 
+                href="/image.png" 
                 width="100%" 
                 height="100%" 
                 clipPath="url(#aviator-mask)" 
@@ -293,7 +321,7 @@ export default function Portfolio() {
           <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
             <div className="shadow-2xl ... rounded-xl mx-auto relative w-64 h-64">
               <Image 
-                src="/Portfolio/Avatar.png" 
+                src="/Avatar.png" 
                 alt="Bhavya Patel" 
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
@@ -303,26 +331,72 @@ export default function Portfolio() {
             <div className="md:w-2/3 text-lg text-[var(--foreground)] opacity-70 space-y-4">
               <p>{portfolioData.about}</p>
                <div className="flex justify-center space-x-25 mt-8">
+
                 <div className='flex flex-col items-center'>
-                  <p className='text-2xl font-extrabold text-[var(--foreground)]'>02+ </p>
+                  <p className='text-2xl font-extrabold text-[var(--foreground)]'>03+ </p>
                   <p className='text-sm text-[var(--foreground)] opacity-70'> Years <br/> Experience</p>
                 </div>
+                
                 <div className='flex flex-col items-center'>
                   <p className='text-2xl font-extrabold text-[var(--foreground)]'> 10+ </p>
-                  <p className='text-sm text-[var(--foreground)] opacity-70'> Completed <br/> Projects </p>
+                  <p className='text-sm text-[var(--foreground)] opacity-70'> Projects <br/> & Labs </p>
                 </div>
                </div>
             </div>
             
           </div>
-         
 
+        </section>
+
+        {/* --- Work History Section --- */}
+        <section id="experience" className="py-20 md:py-24">
+          <h2 className="text-4xl font-bold text-center mb-16 text-[var(--foreground)]">
+            <span className="text-[hsl(225,69%,61%)]">02.</span> Work History
+          </h2>
+
+          <div className="max-w-4xl mx-auto px-4">
+            <div className="relative border-l-2 border-[hsl(225,69%,61%)] border-opacity-30 ml-3 md:ml-6 space-y-12">
+              
+              {portfolioData.experience.map((job, index) => (
+                <div key={index} className="relative pl-8 md:pl-12 group">
+                  
+                  {/* Timeline Icon */}
+                  <div className="absolute -left-[13px] md:-left-[16px] top-0 bg-[var(--background)] border-2 border-[hsl(225,69%,61%)] text-[hsl(225,69%,61%)] rounded-full p-1.5 md:p-2 z-10 group-hover:bg-[hsl(225,69%,61%)] group-hover:text-white transition-colors duration-300">
+                    <BriefcaseIcon className="w-4 h-4 md:w-5 md:h-5" />
+                  </div>
+
+                  {/* Job Card */}
+                  <div className="bg-[var(--project_background)] p-6 rounded-xl shadow-lg border border-transparent hover:border-[hsl(225,69%,61%)] transition-all duration-300 transform group-hover:-translate-y-1">
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-4">
+                      <div>
+                        <h3 className="text-xl md:text-2xl font-bold text-[var(--foreground)] group-hover:text-[hsl(225,69%,61%)] transition-colors">
+                          {job.role}
+                        </h3>
+                        <h4 className="text-md font-semibold text-[var(--foreground)] opacity-80">
+                          {job.company}
+                        </h4>
+                      </div>
+                    
+                      <div className="mt-2 md:mt-0 flex-shrink-0 inline-block bg-[hsl(225,69%,61%)] text-white px-3 py-2 rounded-full text-sm font-mono font-bold text-center min-w-[160px] shadow-md">
+                        {job.period}
+                      </div>
+                    </div>
+
+                    <p className="text-[var(--foreground)] opacity-70 leading-relaxed text-sm md:text-base">
+                      {job.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+              
+            </div>
+          </div>
         </section>
 
         {/* --- Skills Section --- */}
         <section id="skills" className="py-20 md:py-22">
           <h2 className="text-4xl font-bold text-center mb-12 text-[var(--foreground)]">
-            <span className="text-[hsl(225,69%,61%)]">02.</span> My Skills
+            <span className="text-[hsl(225,69%,61%)]">03.</span> My Skills
           </h2>
           
           <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -340,7 +414,7 @@ export default function Portfolio() {
         {/* --- Projects Section --- */}
         <section id="projects" className="py-20 md:py-22">
           <h2 className="text-4xl font-bold text-center mb-12 text-[var(--foreground)]">
-            <span className="text-[hsl(225,69%,61%)]">03.</span> My Projects
+            <span className="text-[hsl(225,69%,61%)]">04.</span> My Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {portfolioData.projects.map((project, index) => (
@@ -370,7 +444,7 @@ export default function Portfolio() {
         {/* --- Contact Section --- */}
       <section id="contact" className="py-20 md:py-32">
         <h2 className="text-4xl font-bold text-center mb-3 text-[var(--foreground)]">
-          <span className="text-[hsl(225,69%,61%)]">04.</span> Contact Me
+          <span className="text-[hsl(225,69%,61%)]">05.</span> Contact Me
         </h2>
         <h2 className="text-1xl text-center mb-19 text-[var(--foreground)] opacity-70">
           Get In Touch

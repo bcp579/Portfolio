@@ -4,7 +4,7 @@ const nextConfig = {
   output: 'export',
 
   //  Sets the base path to your repository name
-  basePath: '/Portfolio',
+  // basePath: '/Portfolio',
 
   //  Disables image optimization, which is not supported in a static export environment
   images: {

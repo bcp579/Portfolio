@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 
-const words = ["a developer", "a coder", "an engineer", "a problem-solver"];
+const words = [ "a Full-Stack Developer", "a Python Developer" , "a Mobile App Architect", "a Data Science Enthusiast"];
 
 export default function Typewriter() {
   const [text, setText] = useState('');
